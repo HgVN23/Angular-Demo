@@ -1,0 +1,34 @@
+.login {
+	background: rgba(255, 255, 255, .4);
+	width: 35%;
+	transition: .3s;
+
+	span {
+		background: rgba(255, 255, 255, .5);
+	}
+
+	input::placeholder {
+		color: gray;
+	}
+
+	.fs-14 {
+		font-size: 14px;
+	}
+}
+
+.login:hover {
+	box-shadow:
+		1rem 1rem 1rem #b8b8b86b,
+		-1rem -1rem 1rem #b8b8b86b;
+}
+
+.login-img {
+	width: 30rem;
+	height: 23rem;
+}
+
+@media (max-width: 767px) {
+	.login {
+		width: 75%;
+	}
+}

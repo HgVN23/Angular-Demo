@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+* {
+	/*outline: 1px solid blue;*/
+	color: #424242;
+	user-select: none;
+}
+html {
+	height: 100%;
+}
+body {
+	background: linear-gradient(to top left, #0099ff 0%, #ff6699 100%);
+}

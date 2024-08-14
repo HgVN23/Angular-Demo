@@ -1,0 +1,10 @@
+<section><app-user /></section>
+<section><app-if /></section>
+<section><app-for /></section>
+<section><app-binding /></section>
+<section><app-handling /></section>
+<section><app-input name="Shuuya" /></section>
+<section>
+	<app-output (addItemEvent)="addItem($event)" />
+    <p>🍪 +{{ items.length }}</p>
+</section>

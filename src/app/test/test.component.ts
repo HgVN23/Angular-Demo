@@ -107,10 +107,10 @@ export class OutputComponent {
 @Component({
   selector: 'app-defer',
   standalone: true,
-  imports: [],
+  imports: [ForComponent],
   template: `
     @defer (on viewport) {
-      <comments />
+      <app-for />
     } @placeholder {
       <p>Future comments</p>
     } @loading (minimum 2s) {

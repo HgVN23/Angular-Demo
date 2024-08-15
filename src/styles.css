@@ -12,3 +12,36 @@ html {
 body {
 	background: linear-gradient(to top left, #0099ff 0%, #ff6699 100%);
 }
+
+.login,
+.sign-up {
+	background: rgba(255, 255, 255, .4);
+	width: 35%;
+	transition: .3s;
+
+	span {
+		background: rgba(255, 255, 255, .5);
+	}
+
+	input::placeholder {
+		color: gray;
+	}
+
+	.fs-14 {
+		font-size: 14px;
+	}
+}
+
+.login:hover,
+.sign-up:hover {
+	box-shadow:
+		1rem 1rem 1rem #b8b8b86b,
+		-1rem -1rem 1rem #b8b8b86b;
+}
+
+@media (max-width: 767px) {
+	.login,
+	.sign-up {
+		width: 75%;
+	}
+}

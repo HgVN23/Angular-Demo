@@ -105,6 +105,24 @@ export class OutputComponent {
 }
 
 @Component({
+  selector: 'app-defer',
+  standalone: true,
+  imports: [],
+  template: `
+    @defer (on viewport) {
+      <comments />
+    } @placeholder {
+      <p>Future comments</p>
+    } @loading (minimum 2s) {
+      <p>Loading comments...</p>
+    }
+  `
+})
+export class DeferComponent {
+
+}
+
+@Component({
   selector: 'app-test',
   standalone: true,
   imports: [
@@ -114,7 +132,8 @@ export class OutputComponent {
     BindingComponent,
     HandlingComponent,
     InputComponent,
-    OutputComponent
+    OutputComponent,
+    DeferComponent
   ],
   templateUrl: './test.component.html',
   styleUrl: './test.component.css'
